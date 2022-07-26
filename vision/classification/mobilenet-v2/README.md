@@ -2,6 +2,8 @@
 
 # MobileNet
 
+[Original](https://github.com/onnx/models/commit/cbda9ebd037241c6c6a0826971741d5532af8fa4)
+
 ## Use cases
 MobileNet models perform image classification - they take images as input and classify the major object in the image into a set of pre-defined classes. They are trained on ImageNet dataset which contains images from 1000 classes. MobileNet models are also very efficient in terms of speed and size and hence are ideal for embedded and mobile applications.
 
@@ -13,9 +15,9 @@ MobileNet reduces the dimensionality of a layer thus reducing the dimensionality
 The below model is using multiplier value as 1.0.
 * Version 2:
 
- |Model        |Download  |Download (with sample test data)| ONNX version |Opset version|Top-1 accuracy (%)|Top-5 accuracy (%)|
-|-------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|
-|MobileNet v2-1.0|    [13.6 MB](model/mobilenetv2-7.onnx)  |  [14.1 MB](model/mobilenetv2-7.tar.gz) |  1.2.1  | 7| 70.94    |     89.99           |
+| Model            | Download                      | ONNX version | Opset version | Top-1 accuracy (%) | Top-5 accuracy (%) |
+|------------------+-------------------------------+--------------+---------------+--------------------+--------------------|
+| MobileNet v2-1.0 | [13.6 MB](mobilenetv2-7.onnx) |        1.2.1 |             7 |              70.94 |              89.99 |
 
 ## Inference
 We used MXNet as framework with gluon APIs to perform inference. View the notebook [imagenet_inference](../imagenet_inference.ipynb) to understand how to use above models for doing inference. Make sure to specify the appropriate model name in the notebook.
